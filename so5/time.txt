@@ -1,0 +1,3 @@
+1.92002
+
+seconds to sort 100M items using parallel quicksort. This is approximately 3x as fast as std::sort on my machine

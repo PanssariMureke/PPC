@@ -1,0 +1,3 @@
+0.61477
+
+seconds to go through 6000 * 6000 matrix of floats

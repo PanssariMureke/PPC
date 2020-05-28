@@ -1,0 +1,66 @@
+Final Project / Reverse Engineering Malware
+---------------------------------------------------------------------------------------------
+
+Welcome to the final project for the Reverse Engineering for Malware Analysis course.
+Please read carefully the instructions below and provide your answers before the agreed deadline.
+Make sure to produce and submit all the additional items as well. Please provide your answers
+as a plain text document. If you include additional items, add them as separate files
+and reference them in the textual document. If you include images, please provide them as PNGs.
+Please also include your 6-digits matricule number to your textual description.
+
+The homework is crafted specifically for you and must be solved individually.
+
+
+Exercise #1 (30 points)
+-----------------------
+
+Consider the binary sample fp1.exe. The sample is not malicious. When executed in
+combination with fp1.fspc and the right amount of command line parameters, it prints
+a value to the screen. Please analyze the program and answer the following questions.
+
+*Note*: msvcr100.dll is a supporting runtime module, no need to analyze it :)
+
+Questions:
+* If you invoke fp1.exe with the provided fp1.fspc, what exactly does this program
+  calculate? Please be precise and complete with your answer. (5 points)
+* The program uses a powerful technique to protect its internal operations. Please
+  identify the technique used, and reverse engineer the design of the used approach.
+  When explaining, feel free to add any diagram, scheme or drawing you consider
+  necessary. (15 points)
+* Please modify the FSPC data file so that the tool computes and prints to screen
+  the following result: the sum of all characters in the input string as byte values,
+  XORed against the length of the string (DWORD-wise). Please note that modifications
+  to any of the executable modules (fp1.exe, msvcr100.dll) are not allowed. Please
+  provide your modified FSPC file. (10 points)
+
+Exercise #2 (30 points)
+-----------------------
+
+Consider the binary sample fp2.exe, in which the .text section is encrypted. The sample
+is not malicious. Please analyze this program and answer the following questions.
+
+Questions:
+* How does the program read the decryption key? Please provide the relevant
+  details. (5 points)
+* What is the decryption key for your sample? Please explain how you were able to
+  retrieve it, providing all the necessary details. (15 points)
+* The program protects itself with three anti-debugging tricks. What are they, and how
+  can you bypass them? Please be clear and concise when answering. (10 points)
+
+  NOTE: Please provide working source code for any tool you might have created to
+  solve this problem. The source code can be provided in a variety of languages, but
+  please make sure to explain how to build/run your code:
+      * Python
+      * C
+      * C++
+      * x86 asm
+      * Java
+
+Feedback on Ghidra (2 points)
+-----------------------------
+
+This year for the first time in the history of the course we used Ghidra as the tool
+of reference when it comes to static analysis. What do you think of that choice? What
+did you like or dislike about Ghidra? If you are familiar with IDA Pro, would you say
+that IDA Pro Freeware would have been still a better choice? Why?
+
